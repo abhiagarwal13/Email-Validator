@@ -3,21 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Email Validator - Contact</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Contact</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#fff3e0; color:#333; }
+    header { background:#FF5722; padding:15px; text-align:center; }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    section { padding:40px; text-align:center; }
+    form { margin-top:20px; }
+    input, textarea { width:300px; padding:10px; margin:5px 0; border:1px solid #ccc; border-radius:5px; }
+    button { padding:10px 20px; background:#FF5722; color:white; border:none; border-radius:5px; cursor:pointer; }
+    button:hover { background:#e64a19; }
+    footer { background:#333; color:white; text-align:center; padding:10px; position:fixed; width:100%; bottom:0; }
+  </style>
 </head>
 <body>
   <header>
+    <h1>Contact Us</h1>
     <nav>
-      <a href="home.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <h1>Contact Us</h1>
-    <p>You can reach us at: <a href="mailto:support@emailvalidator.com">support@emailvalidator.com</a></p>
-  </main>
+  <section>
+    <h2>Contact Page</h2>
+    <p>Fill out the form below to get in touch with us:</p>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" rows="4" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
 </body>
 </html>
